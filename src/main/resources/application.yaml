@@ -1,0 +1,65 @@
+#spring:
+#  application:
+#    name: event-driven-poc
+#
+##
+##server:
+##  port: 8080
+##
+##  datasource:
+##    url: jdbc:postgresql://localhost:5432/emaildb
+##    username: user
+##    password: pass
+##
+##  jpa:
+##    hibernate:
+##      ddl-auto: update
+##    show-sql: true
+##
+##  kafka:
+##    bootstrap-servers: localhost:9092
+##    consumer:
+##      auto-offset-reset: earliest
+##
+##  mail:
+##    host: localhost
+##    port: 1025
+#
+#
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/emaildb
+#    username: user
+#    password: pass
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    consumer:
+#      auto-offset-reset: earliest
+#
+#  mail:
+#    host: localhost
+#    port: 1025
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/emaildb
+    username: user
+    password: pass
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: earliest
+
+  mail:
+    host: localhost
+    port: 1025
